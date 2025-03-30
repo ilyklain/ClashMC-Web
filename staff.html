@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff - ClashMC Network</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="../images/claash.png" alt="Clash" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/news.html">News</a>
+            <a href="/pages/about.html">About Us</a>
+            <a href="/pages/games.html">Games</a>
+            <a href="/pages/support.html">Support</a>
+            <a href="/pages/staff.html" class="active">Staff</a>
+        </div>
+        <div class="nav-cta">
+            <button class="play-now" onclick="copyIP()">PLAY NOW</button>
+            <span id="ip-tooltip" class="tooltip">clashmc.es</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Nuestro Equipo</h1>
+            <p>Conoce a las personas detrás de ClashMC Network</p>
+        </div>
+    </header>
+
+    <section class="staff-section" data-aos="fade-up">
+        <div class="staff-grid">
+            <div class="staff-card">
+                <img src="../images/th.jpg" alt="Admin">
+                <div class="staff-content">
+                    <span class="staff-role">Owner</span>
+                    <h3>Deluxeee</h3>
+                    <p>Fundador y desarrollador principal del servidor. Encargado de la gestión y desarrollo de nuevas características.</p>
+                    <div class="staff-social">
+                        <a href="#" class="discord">Discord</a>
+                        <a href="#" class="twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-card">
+                <img src="../images/th.jpg" alt="Moderator">
+                <div class="staff-content">
+                    <span class="staff-role">Owner</span>
+                    <h3>Lucasssss</h3>
+                    <p>Propietario y administrador principal del servidor. Encargado de la gestión y desarrollo del servidor.</p>
+                    <div class="staff-social">
+                        <a href="#" class="discord">Discord</a>
+                        <a href="#" class="twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-card">
+                <img src="../images/th.jpg" alt="Helper">
+                <div class="staff-content">
+                    <span class="staff-role">Co-Owner</span>
+                    <h3>k0fadwa</h3>
+                    <p>Co-propietario del servidor. Responsable de la administración y supervisión de las operaciones diarias.</p>
+                    <div class="staff-social">
+                        <a href="#" class="discord">Discord</a>
+                        <a href="#" class="twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-staff" data-aos="fade-up">
+        <h2>¿Quieres unirte al equipo?</h2>
+        <p>Estamos buscando personas apasionadas por Minecraft y con ganas de ayudar a la comunidad.</p>
+        <a href="#" class="staff-apply-btn">APLICAR AHORA</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ClashMC Network</h3>
+                <p>The ultimate Minecraft experience</p>
+                <p class="ip">clashmc.es</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/rules">Rules</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/yourserver" target="_blank" class="discord">Discord</a>
+                    <a href="https://twitter.com/clashmc" target="_blank" class="twitter">Twitter</a>
+                    <a href="https://instagram.com/clashmc" target="_blank" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClashMC Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText('clashmc.es');
+            const tooltip = document.getElementById('ip-tooltip');
+            tooltip.innerHTML = '¡IP Copiada!';
+            setTimeout(() => {
+                tooltip.innerHTML = 'clashmc.es';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

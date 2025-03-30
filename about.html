@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ClashMC Network</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="../images/claash.png" alt="Clash" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/news.html">News</a>
+            <a href="/pages/about.html" class="active">About Us</a>
+            <a href="/pages/games.html">Games</a>
+            <a href="/pages/support.html">Support</a>
+            <a href="/pages/staff.html">Staff</a>
+        </div>
+        <div class="nav-cta">
+            <button class="play-now" onclick="copyIP()">PLAY NOW</button>
+            <span id="ip-tooltip" class="tooltip">clashmc.es</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Sobre Nosotros</h1>
+            <p>Descubre la historia detrás de ClashMC Network</p>
+        </div>
+    </header>
+
+    <section class="about-section" data-aos="fade-up">
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Nuestra Historia</h3>
+                <p>ClashMC Network nació de la pasión por crear una experiencia única de Minecraft PvP. Desde nuestro inicio, nos hemos dedicado a construir una comunidad vibrante y competitiva.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Nuestra Misión</h3>
+                <p>Proporcionar la mejor experiencia de juego posible, fomentando una comunidad respetuosa y competitiva donde cada jugador pueda desarrollar su potencial.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Nuestra Comunidad</h3>
+                <p>Miles de jugadores de todo el mundo forman parte de nuestra comunidad. Organizamos eventos regulares, torneos y actividades para mantener la diversión y el espíritu competitivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section" data-aos="fade-up">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">50,000+</span>
+                <p>Jugadores Registrados</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <p>Eventos Realizados</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <p>Soporte Activo</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ClashMC Network</h3>
+                <p>The ultimate Minecraft experience</p>
+                <p class="ip">clashmc.es</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/rules">Rules</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/yourserver" target="_blank" class="discord">Discord</a>
+                    <a href="https://twitter.com/clashmc" target="_blank" class="twitter">Twitter</a>
+                    <a href="https://instagram.com/clashmc" target="_blank" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClashMC Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText('clashmc.es');
+            const tooltip = document.getElementById('ip-tooltip');
+            tooltip.innerHTML = '¡IP Copiada!';
+            setTimeout(() => {
+                tooltip.innerHTML = 'clashmc.es';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

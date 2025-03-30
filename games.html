@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - ClashMC Network</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="../images/claash.png" alt="Clash" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/news.html">News</a>
+            <a href="/pages/about.html">About Us</a>
+            <a href="/pages/games.html" class="active">Games</a>
+            <a href="/pages/support.html">Support</a>
+            <a href="/pages/staff.html">Staff</a>
+        </div>
+        <div class="nav-cta">
+            <button class="play-now" onclick="copyIP()">PLAY NOW</button>
+            <span id="ip-tooltip" class="tooltip">clashmc.es</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Nuestros Juegos</h1>
+            <p>Descubre todos los modos de juego disponibles</p>
+        </div>
+    </header>
+
+    <section class="games-section" data-aos="fade-up">
+        <div class="games-grid">
+            <div class="game-card">
+                <img src="../images/th.jpg" alt="KitMap">
+                <div class="game-content">
+                    <h3>KitMap</h3>
+                    <p>Experimenta intensas batallas PvP con kits predefinidos. Domina diferentes estilos de combate y conviértete en el mejor guerrero.</p>
+                    <div class="game-stats">
+                        <span>Jugadores Online: 500+</span>
+                        <span>Kits Disponibles: 10</span>
+                    </div>
+                    <a href="#" class="game-btn">JUGAR AHORA</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="../images/th.jpg" alt="HCFactions">
+                <div class="game-content">
+                    <h3>HCFactions</h3>
+                    <p>Forma tu facción, construye tu base, raidea a tus enemigos y domina el mapa en este intenso modo hardcore de supervivencia y PvP.</p>
+                    <div class="game-stats">
+                        <span>Jugadores Online: 300+</span>
+                        <span>Facciones Activas: 50+</span>
+                    </div>
+                    <a href="#" class="game-btn">JUGAR AHORA</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="../images/th.jpg" alt="Practice">
+                <div class="game-content">
+                    <h3>Practice</h3>
+                    <p>Mejora tus habilidades PvP en diferentes escenarios y modos de juego. Compite en duelos 1v1 o partidas por equipos.</p>
+                    <div class="game-stats">
+                        <span>Jugadores Online: 400+</span>
+                        <span>Arenas: 15</span>
+                    </div>
+                    <a href="#" class="game-btn">JUGAR AHORA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ClashMC Network</h3>
+                <p>The ultimate Minecraft experience</p>
+                <p class="ip">clashmc.es</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/rules">Rules</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/yourserver" target="_blank" class="discord">Discord</a>
+                    <a href="https://twitter.com/clashmc" target="_blank" class="twitter">Twitter</a>
+                    <a href="https://instagram.com/clashmc" target="_blank" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClashMC Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText('clashmc.es');
+            const tooltip = document.getElementById('ip-tooltip');
+            tooltip.innerHTML = '¡IP Copiada!';
+            setTimeout(() => {
+                tooltip.innerHTML = 'clashmc.es';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - ClashMC Network</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="../images/claash.png" alt="Clash" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/news.html" class="active">News</a>
+            <a href="/pages/about.html">About Us</a>
+            <a href="/pages/games.html">Games</a>
+            <a href="/pages/support.html">Support</a>
+            <a href="/pages/staff.html">Staff</a>
+        </div>
+        <div class="nav-cta">
+            <button class="play-now" onclick="copyIP()">PLAY NOW</button>
+            <span id="ip-tooltip" class="tooltip">clashmc.es</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Noticias y Eventos</h1>
+            <p>Mantente al día con las últimas actualizaciones</p>
+        </div>
+    </header>
+
+    <section class="news-section" data-aos="fade-up">
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="../images/th.jpg" alt="Gran Apertura">
+                <div class="news-content">
+                    <span class="news-date">20 Marzo 2024</span>
+                    <h3>¡Gran Apertura de ClashMC Network!</h3>
+                    <p>¡Celebra con nosotros el lanzamiento oficial de ClashMC Network! Únete a la diversión con eventos especiales, premios exclusivos y experiencias únicas en todos nuestros modos de juego.</p>
+                    <a href="#" class="news-link">LEER MÁS</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="../images/th.jpg" alt="Discord Integration">
+                <div class="news-content">
+                    <span class="news-date">19 Marzo 2024</span>
+                    <h3>Integración con Discord</h3>
+                    <p>¡Mantente informado en tiempo real! Ahora todas las noticias y anuncios importantes del servidor se mostrarán automáticamente en nuestra web cuando se publiquen en Discord.</p>
+                    <a href="#" class="news-link">LEER MÁS</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="../images/th.jpg" alt="Modos de Juego">
+                <div class="news-content">
+                    <span class="news-date">18 Marzo 2024</span>
+                    <h3>Descubre Nuestros Modos de Juego</h3>
+                    <p>Explora nuestros emocionantes modos: KitMap para batallas instantáneas, HCFactions para una experiencia hardcore, y Practice para mejorar tus habilidades PvP.</p>
+                    <a href="#" class="news-link">LEER MÁS</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ClashMC Network</h3>
+                <p>The ultimate Minecraft experience</p>
+                <p class="ip">clashmc.es</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/rules">Rules</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/yourserver" target="_blank" class="discord">Discord</a>
+                    <a href="https://twitter.com/clashmc" target="_blank" class="twitter">Twitter</a>
+                    <a href="https://instagram.com/clashmc" target="_blank" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClashMC Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText('clashmc.es');
+            const tooltip = document.getElementById('ip-tooltip');
+            tooltip.innerHTML = '¡IP Copiada!';
+            setTimeout(() => {
+                tooltip.innerHTML = 'clashmc.es';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

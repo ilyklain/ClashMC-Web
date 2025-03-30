@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - ClashMC Network</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="../images/claash.png" alt="Clash" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/news.html">News</a>
+            <a href="/pages/about.html">About Us</a>
+            <a href="/pages/games.html">Games</a>
+            <a href="/pages/support.html" class="active">Support</a>
+            <a href="/pages/staff.html">Staff</a>
+        </div>
+        <div class="nav-cta">
+            <button class="play-now" onclick="copyIP()">PLAY NOW</button>
+            <span id="ip-tooltip" class="tooltip">clashmc.es</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Soporte</h1>
+            <p>¿Necesitas ayuda? Estamos aquí para ti</p>
+        </div>
+    </header>
+
+    <section class="support-section" data-aos="fade-up">
+        <div class="support-grid">
+            <div class="support-card">
+                <h3>Discord Support</h3>
+                <p>Únete a nuestro servidor de Discord para obtener ayuda instantánea de nuestro equipo y comunidad.</p>
+                <a href="https://discord.gg/yourserver" class="support-btn" target="_blank">UNIRSE A DISCORD</a>
+            </div>
+
+            <div class="support-card">
+                <h3>FAQ</h3>
+                <p>Encuentra respuestas a las preguntas más frecuentes sobre nuestro servidor y servicios.</p>
+                <a href="#faq" class="support-btn">VER FAQ</a>
+            </div>
+
+            <div class="support-card">
+                <h3>Reportes</h3>
+                <p>¿Encontraste un bug o quieres reportar a un jugador? Usa nuestro sistema de reportes.</p>
+                <a href="#report" class="support-btn">CREAR REPORTE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq" data-aos="fade-up">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>¿Cómo puedo comprar un rango?</h3>
+                <p>Visita nuestra tienda en store.clashmc.es y selecciona el rango que deseas. Aceptamos diversos métodos de pago.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cómo reporto a un jugador?</h3>
+                <p>Usa el comando /report en el juego o crea un ticket en nuestro Discord para reportar comportamiento inadecuado.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cuáles son los requisitos mínimos?</h3>
+                <p>Minecraft 1.8+ con al menos 4GB de RAM. Recomendamos usar OptiFine para mejor rendimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ClashMC Network</h3>
+                <p>The ultimate Minecraft experience</p>
+                <p class="ip">clashmc.es</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/rules">Rules</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/yourserver" target="_blank" class="discord">Discord</a>
+                    <a href="https://twitter.com/clashmc" target="_blank" class="twitter">Twitter</a>
+                    <a href="https://instagram.com/clashmc" target="_blank" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClashMC Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText('clashmc.es');
+            const tooltip = document.getElementById('ip-tooltip');
+            tooltip.innerHTML = '¡IP Copiada!';
+            setTimeout(() => {
+                tooltip.innerHTML = 'clashmc.es';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
